@@ -1,0 +1,10 @@
+/* styles/Home.module.css */
+.hero {
+  background-image: url("../../../public/IMG-20240804-WA0016.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
