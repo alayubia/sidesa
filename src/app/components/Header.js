@@ -39,10 +39,6 @@ export default function AppHeader() {
         </Menu.Dropdown>
       </Menu>
       <span style={{ margin: '0 10px', borderLeft: '1px solid #B0D9B1', height: '40px' }}></span>
-      <Link href="/families" passHref legacyBehavior>
-        <Anchor style={{color: 'white', fontWeight: 'bold'}}>Arsip Data</Anchor>
-      </Link>
-      <span style={{ margin: '0 10px', borderLeft: '1px solid #B0D9B1', height: '40px' }}></span>
       <Link href="/login" passHref legacyBehavior>
         <Anchor style={{color: 'white', fontWeight: 'bold'}}>Login</Anchor>
       </Link>
