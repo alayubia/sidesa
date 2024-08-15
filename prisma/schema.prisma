@@ -15,18 +15,74 @@ model User {
 }
 
 model Member {
-  id       Int    @id @default(autoincrement())
-  name     String
-  position String
-  address  String
-  gender   String
-  lembaga  String
+  id       Int     @id @default(autoincrement())
+  name     String?
+  position String?
+  address  String?
+  gender   String?
+  lembaga  String?
+  profileImage String?
 }
 
 model Family {
   id                 Int      @id @default(autoincrement())
-  noKK               String   @unique
-  namaKepalaKeluarga String
+  noKK               String?  @unique
+  namaKepalaKeluarga String?
   nik                String[]
-  linkFolder         String
+  linkFolder         String?
+}
+
+model Agama {
+  id        Int       @id(map: "daftar_agama_pkey") @default(autoincrement())
+  tanggal   DateTime? @default(now()) @db.Date
+  agama     String?   @db.VarChar(255)
+  laki_laki Int?
+  perempuan Int?
+  jumlah    Int?
+}
+
+model Mata_pencaharian {
+  id              Int       @id(map: "mata_pencaharian_pokok_pkey") @default(autoincrement())
+  tanggal         DateTime? @default(now()) @db.Date
+  jenis_pekerjaan String?   @db.VarChar(255)
+  laki_laki       Int?
+  perempuan       Int?
+  jumlah          Int?
+}
+
+model Demografi {
+  id                 Int       @id(map: "demografi_pkey") @default(autoincrement())
+  tanggal            DateTime? @default(now()) @db.Date
+  jumlah_laki_laki   Int?
+  jumlah_perempuan   Int?
+  jumlah_total       Int?
+  jumlah_kk          Int?
+  kepadatan_penduduk Decimal?  @db.Decimal(10, 2)
+}
+
+model Pendidikan {
+  id                 Int       @id(map: "pendidikan_pkey") @default(autoincrement())
+  tanggal            DateTime? @default(now()) @db.Date
+  tingkat_pendidikan String?
+  laki_laki          Int?
+  perempuan          Int?
+  jumlah             Int?
+}
+
+model Potensi {
+  id      Int     @id @default(autoincrement())
+  nama    String?
+  jumlah  String?
+  satuan  String?
+  judul   String?
+  sub_bab String?
+  bab     String?
+}
+
+model Keluhan {
+  id        Int      @id @default(autoincrement())
+  nama      String
+  keluhan   String
+  gambar    String?
+  createdAt DateTime @default(now())
 }

@@ -1,6 +1,5 @@
-// components/MembersTable.js
 import { useMemo } from 'react';
-import { Group, ActionIcon } from '@mantine/core';
+import { Group, ActionIcon, Avatar } from '@mantine/core'; // Tambahkan Avatar
 import {
     MantineReactTable,
 } from 'mantine-react-table';
@@ -15,6 +14,15 @@ export default function AdminMembersTable({ title, members, onEdit, onDelete }) 
             { accessorKey: 'address', header: 'Alamat' },
             { accessorKey: 'gender', header: 'Jenis Kelamin' },
             {
+                accessorKey: 'profileImage',
+                header: 'Foto Profil',
+                Cell: ({ cell }) => (
+                    <Avatar src={cell.getValue()} alt="Profile Image" radius="xl" size="md" />
+                ),
+                size: 80,
+                enableColumnFilter: false,
+            },
+            {
                 accessor: 'actions',
                 header: 'Actions',
                 Cell: ({ row }) => (
@@ -27,8 +35,13 @@ export default function AdminMembersTable({ title, members, onEdit, onDelete }) 
         ], [],);
 
     return (
-        <div className='my-4'>
-            <MantineReactTable columns={columns} data={members} enableColumnFilters={true} initialState={{ showColumnFilters: true }}/>
+        <div className='mb-4'>
+            <MantineReactTable columns={columns} data={members} enableColumnFilters={true} initialState={{ showColumnFilters: true, sorting: [
+            {
+              id: 'id',
+              asc: true,
+            },
+          ], }}/>
         </div>
     );
 }

@@ -25,7 +25,7 @@ export default function FamiliesPage() {
     }, []);
 
     const handleAddFamily = async () => {
-        const method = newFamily.noKK ? 'PUT' : 'POST';
+        const method = newFamily.id ? 'PUT' : 'POST';
         await fetch('/api/families', {
             method,
             headers: {
@@ -67,39 +67,39 @@ export default function FamiliesPage() {
     return (
         <div>
             <AdminHeader />
-            <div className='bg-white mb-14 py-4'>
-                <Container>
+            <div className='bg-white mb-14 px-6'>
+                <div className='flex justify-between items-center mt-1'>
                     <Title align="center" mb="lg">Arsip Data</Title>
-                    <Button onClick={() => setFamilyModalOpened(true)}>Add Family</Button>
-                    <AdminFamilyTable families={families} onEdit={handleEditFamily} onDelete={handleDeleteFamily} />
-                    <Modal opened={familyModalOpened} onClose={() => setFamilyModalOpened(false)} title="Add/Edit Family">
-                        <TextInput
-                            label="No KK"
-                            placeholder="No KK"
-                            value={newFamily.noKK}
-                            onChange={(e) => setNewFamily({ ...newFamily, noKK: e.currentTarget.value })}
-                        />
-                        <TextInput
-                            label="Nama Kepala Keluarga"
-                            placeholder="Nama Kepala Keluarga"
-                            value={newFamily.namaKepalaKeluarga}
-                            onChange={(e) => setNewFamily({ ...newFamily, namaKepalaKeluarga: e.currentTarget.value })}
-                        />
-                        <Textarea
-                            label="NIK-NIK dari KK terkait"
-                            placeholder="Masukkan NIK satu per baris"
-                            value={newFamily.nik}
-                            onChange={(e) => setNewFamily({ ...newFamily, nik: e.currentTarget.value })}
-                        />
-                        <TextInput
-                            label="Link Folder"
-                            placeholder="Link Folder"
-                            value={newFamily.linkFolder}
-                            onChange={(e) => setNewFamily({ ...newFamily, linkFolder: e.currentTarget.value })}
-                        />
-                        <Button onClick={handleAddFamily} fullWidth mt="md">{newFamily.noKK ? 'Update Family' : 'Add Family'}</Button>
-                    </Modal>
-                </Container>
+                    <Button onClick={() => setFamilyModalOpened(true)}>Tambah Data</Button>
+                </div>
+                <AdminFamilyTable families={families} onEdit={handleEditFamily} onDelete={handleDeleteFamily} />
+                <Modal opened={familyModalOpened} onClose={() => setFamilyModalOpened(false)} title="Add/Edit Family">
+                    <TextInput
+                        label="No KK"
+                        placeholder="No KK"
+                        value={newFamily.noKK}
+                        onChange={(e) => setNewFamily({ ...newFamily, noKK: e.currentTarget.value })}
+                    />
+                    <TextInput
+                        label="Nama Kepala Keluarga"
+                        placeholder="Nama Kepala Keluarga"
+                        value={newFamily.namaKepalaKeluarga}
+                        onChange={(e) => setNewFamily({ ...newFamily, namaKepalaKeluarga: e.currentTarget.value })}
+                    />
+                    <Textarea
+                        label="NIK-NIK dari KK terkait"
+                        placeholder="Masukkan NIK satu per baris"
+                        value={newFamily.nik}
+                        onChange={(e) => setNewFamily({ ...newFamily, nik: e.currentTarget.value })}
+                    />
+                    <TextInput
+                        label="Link Folder"
+                        placeholder="Link Folder"
+                        value={newFamily.linkFolder}
+                        onChange={(e) => setNewFamily({ ...newFamily, linkFolder: e.currentTarget.value })}
+                    />
+                    <Button onClick={handleAddFamily} fullWidth mt="md">{newFamily.id ? 'Update Family' : 'Add Family'}</Button>
+                </Modal>
             </div>
             <AppFooter />
         </div>

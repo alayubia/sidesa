@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Container, Title } from '@mantine/core';
-import FamilyTable from '@/app/components/FamilyTable';
+import DemografiTable from '@/app/components/DemografiTable';
 import AppHeader from '@/app/components/Header';
 import AppFooter from '@/app/components/Footer';
 import CenteredLoader from '@/app/components/Loader';
@@ -12,7 +12,7 @@ export default function FamiliesPage() {
     const [families, setFamilies] = useState([]);
 
     const fetchFamilies = async () => {
-        const res = await fetch('/api/families');
+        const res = await fetch('/api/demografi');
         const data = await res.json();
         setFamilies(data);
         setLoading(false);
@@ -31,8 +31,8 @@ export default function FamiliesPage() {
             <AppHeader />
             <div className='mb-14'>
                 <Container mt="xl" mb={'xl'}>
-                    <Title align="center" mb="lg">Families</Title>
-                    <FamilyTable families={families} />
+                    <Title align="center" mb="lg">Demografi</Title>
+                    <DemografiTable demografi={families} />
                 </Container>
             </div>
             <AppFooter />

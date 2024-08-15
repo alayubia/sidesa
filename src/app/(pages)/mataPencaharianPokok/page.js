@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Container, Title } from '@mantine/core';
-import FamilyTable from '@/app/components/FamilyTable';
+import MataPencaharianTable from '@/app/components/MataPencaharianTable';
 import AppHeader from '@/app/components/Header';
 import AppFooter from '@/app/components/Footer';
 import CenteredLoader from '@/app/components/Loader';
@@ -31,8 +31,8 @@ export default function FamiliesPage() {
             <AppHeader />
             <div className='mb-14'>
                 <Container mt="xl" mb={'xl'}>
-                    <Title align="center" mb="lg">Families</Title>
-                    <FamilyTable families={families} />
+                    <Title align="center" mb="lg">Mata Pencaharian Pokok</Title>
+                    <MataPencaharianTable mataPencaharian={families} />
                 </Container>
             </div>
             <AppFooter />

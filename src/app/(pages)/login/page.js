@@ -25,7 +25,7 @@ export default function LoginPage() {
     if (res.ok) {
       const { token } = await res.json();
       localStorage.setItem('token', token);
-      router.push('/admin/families');
+      router.push('/admin/keluhan');
     } else {
       const errorData = await res.json();
       setError(errorData.message);
