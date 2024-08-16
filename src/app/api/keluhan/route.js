@@ -44,12 +44,6 @@ export async function POST(request) {
   }
 }
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 export async function GET(request) {
   try {
     const formSubmissions = await prisma.keluhan.findMany();
