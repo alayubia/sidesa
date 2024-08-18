@@ -34,7 +34,7 @@ export default function Lembaga() {
   return (
     <div>
       <AppHeader />
-      <div className='mb-14'>
+      <div className='bg-white mb-14'>
         <Container mt="xl" mb={'xl'}>
           <Title align="center" mb="lg">{`Lembaga ${lembaga}`}</Title>
           <MembersTable title={`Daftar Anggota ${lembaga.toUpperCase()}`} members={data} />

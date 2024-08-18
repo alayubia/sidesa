@@ -29,7 +29,7 @@ export default function FamiliesPage() {
     return (
         <div>
             <AppHeader />
-            <div className='mb-14'>
+            <div className='bg-white mb-14'>
                 <Container mt="xl" mb={'xl'}>
                     <Title align="center" mb="lg">Mata Pencaharian Pokok</Title>
                     <MataPencaharianTable mataPencaharian={families} />

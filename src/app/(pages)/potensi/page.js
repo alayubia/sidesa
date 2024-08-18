@@ -45,7 +45,7 @@ export default function PotensiPage() {
     return (
         <div>
             <AppHeader />
-            <div className='mb-14 px-8'>
+            <div className='bg-white mb-14 px-8'>
                 <Title align="center" mb="lg">Daftar Potensi</Title>
                 {Object.keys(groupedPotensis).map(bab => (
                     <div key={bab}>
