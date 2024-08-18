@@ -45,26 +45,24 @@ export default function PotensiPage() {
     return (
         <div>
             <AppHeader />
-            <div className='mb-14'>
-                <Container mt="xl" mb={'xl'}>
-                    <Title align="" mb="lg">Daftar Potensi</Title>
-                    {Object.keys(groupedPotensis).map(bab => (
-                        <div key={bab}>
-                            <Title order={3}>{bab}</Title>
-                            {Object.keys(groupedPotensis[bab]).map(sub_bab => (
-                                <div key={sub_bab}>
-                                    <Title order={4}>{sub_bab}</Title>
-                                    {Object.keys(groupedPotensis[bab][sub_bab]).map(judul => (
-                                        <div key={judul}>
-                                            <Title order={5}>{judul}</Title>
-                                            <PotensiTable data={groupedPotensis[bab][sub_bab][judul]} />
-                                        </div>
-                                    ))}
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </Container>
+            <div className='mb-14 px-8'>
+                <Title align="center" mb="lg">Daftar Potensi</Title>
+                {Object.keys(groupedPotensis).map(bab => (
+                    <div key={bab}>
+                        <Title order={3}>{bab}</Title>
+                        {Object.keys(groupedPotensis[bab]).map(sub_bab => (
+                            <div key={sub_bab}>
+                                <Title order={4}>{sub_bab}</Title>
+                                {Object.keys(groupedPotensis[bab][sub_bab]).map(judul => (
+                                    <div key={judul}>
+                                        <Title order={5}>{judul}</Title>
+                                        <PotensiTable data={groupedPotensis[bab][sub_bab][judul]} />
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                ))}
             </div>
             <AppFooter />
         </div>

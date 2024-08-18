@@ -24,6 +24,10 @@ export default function AppHeader() {
         <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Profil Desa</Anchor>
       </Link>
       <span style={{ margin: '0 10px', borderLeft: '1px solid #B0D9B1', height: '40px' }}></span>
+      <Link href="/potensi" passHref legacyBehavior>
+        <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Potensi</Anchor>
+      </Link>
+      <span style={{ margin: '0 10px', borderLeft: '1px solid #B0D9B1', height: '40px' }}></span>
       <Menu trigger="hover" openDelay={100} closeDelay={200} width={140}>
         <Menu.Target>
           <Anchor style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', color: 'white', fontWeight: 'bold' }}>

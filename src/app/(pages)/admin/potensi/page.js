@@ -67,7 +67,10 @@ export default function PotensiPage() {
         if (!acc[potensi.bab][potensi.sub_bab]) {
             acc[potensi.bab][potensi.sub_bab] = [];
         }
-        acc[potensi.bab][potensi.sub_bab].push(potensi);
+        if (!acc[potensi.bab][potensi.sub_bab][potensi.judul]) {
+            acc[potensi.bab][potensi.sub_bab][potensi.judul] = [];
+        }
+        acc[potensi.bab][potensi.sub_bab][potensi.judul].push(potensi);
         return acc;
 
     }, {});
@@ -75,7 +78,7 @@ export default function PotensiPage() {
     return (
         <div>
             <AdminHeader />
-            <Container className='bg-white mb-14 py-4 px-6'>
+            <div className='bg-white mb-14 py-4 px-6'>
                 <div className='flex justify-between items-center mt-1'>
                     <Title align="" mb="lg">Daftar Potensi</Title>
                     <Button onClick={() => setModalOpened(true)}>Tambah Data</Button>
@@ -135,7 +138,7 @@ export default function PotensiPage() {
                     />
                     <Button onClick={handleAddOrUpdate} fullWidth mt="md">{newData.id ? 'Update Data' : 'Add Data'}</Button>
                 </Modal>
-            </Container>
+            </div>
             <AppFooter />
         </div>
     );
