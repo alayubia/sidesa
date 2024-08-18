@@ -98,7 +98,7 @@ export default function AppHeader() {
         </Menu.Dropdown>
       </Menu>
       <span style={{ margin: '0 10px', borderLeft: '1px solid #B0D9B1', height: '40px' }}></span>
-      <Menu trigger="hover" openDelay={100} closeDelay={200} width={120}>
+      <Menu trigger="hover" openDelay={100} closeDelay={200} width={200}>
         <Menu.Target>
           <Anchor style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', color: 'white', fontWeight: 'bold' }}>
             Form <IconChevronDown size={16} style={{ marginLeft: 4 }} />
@@ -106,18 +106,33 @@ export default function AppHeader() {
         </Menu.Target>
         <Menu.Dropdown>
           <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
-            <Link href="#" passHref legacyBehavior>
-              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Form 1</Anchor>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeKGyb4cC2YuajD_Ye4ymK0mZvbmIIohA1WhxZCeRm0pvlG3Q/viewform" passHref legacyBehavior>
+              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>SKTM sekolah & kuliah</Anchor>
             </Link>
           </Menu.Item>
           <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
-            <Link href="#" passHref legacyBehavior>
-              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Form 2</Anchor>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdaxriIy7wJZf1jq3lrpkb2a6-e5h-QVnPyigpw4bzjT3LpmQ/viewform" passHref legacyBehavior>
+              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat kehilangan</Anchor>
             </Link>
           </Menu.Item>
           <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
-            <Link href="#" passHref legacyBehavior>
-              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Form 3</Anchor>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSey_GN0cJHffFIslHBrwvnWkaDSabNC2XZQ9g3hy64L7oSDpQ/viewform" passHref legacyBehavior>
+              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat beda nama</Anchor>
+            </Link>
+          </Menu.Item>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfh07YS2hJLfDKt-EEsgelUi9sFNSMyC0VNCL-jRXUSFEO82A/viewform" passHref legacyBehavior>
+              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat SKCK</Anchor>
+            </Link>
+          </Menu.Item>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdvUwoFIqvmZdJqbXWbCIRrn3ORc5NMtbGlhXfNRS4i-IQD8w/viewform" passHref legacyBehavior>
+              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat belum menikah</Anchor>
+            </Link>
+          </Menu.Item>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSecDyjgoSypRT2rmSYG3kZxOASKzAdZAAjuu67wcQHbSFp-wA/viewform" passHref legacyBehavior>
+              <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat kematian</Anchor>
             </Link>
           </Menu.Item>
         </Menu.Dropdown>

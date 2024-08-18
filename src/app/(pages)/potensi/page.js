@@ -54,9 +54,8 @@ export default function PotensiPage() {
                             <div key={sub_bab}>
                                 <Title order={4}>{sub_bab}</Title>
                                 {Object.keys(groupedPotensis[bab][sub_bab]).map(judul => (
-                                    <div key={judul}>
-                                        <Title order={5}>{judul}</Title>
-                                        <PotensiTable data={groupedPotensis[bab][sub_bab][judul]} />
+                                    <div key={judul} className='mb-4'>
+                                        <PotensiTable judul={judul} data={groupedPotensis[bab][sub_bab][judul]} />
                                     </div>
                                 ))}
                             </div>
