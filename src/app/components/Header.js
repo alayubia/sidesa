@@ -40,17 +40,17 @@ export default function AppHeader() {
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Agama</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/demografi" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Demografi</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/mataPencaharianPokok" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Mata Pencaharian</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/pendidikan" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Pendidikan</Anchor>
             </Link>
@@ -70,27 +70,27 @@ export default function AppHeader() {
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>BPD</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/lembaga/PKK" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>PKK</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/lembaga/RTRW" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>RT/RW</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/lembaga/KarangTaruna" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Karang Taruna</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/lembaga/LPMD" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>LPMD</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="/lembaga/KelompokTani" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Kelompok Tani</Anchor>
             </Link>
@@ -110,27 +110,27 @@ export default function AppHeader() {
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>SKTM sekolah & kuliah</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdaxriIy7wJZf1jq3lrpkb2a6-e5h-QVnPyigpw4bzjT3LpmQ/viewform" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat kehilangan</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSey_GN0cJHffFIslHBrwvnWkaDSabNC2XZQ9g3hy64L7oSDpQ/viewform" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat beda nama</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfh07YS2hJLfDKt-EEsgelUi9sFNSMyC0VNCL-jRXUSFEO82A/viewform" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat SKCK</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdvUwoFIqvmZdJqbXWbCIRrn3ORc5NMtbGlhXfNRS4i-IQD8w/viewform" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat belum menikah</Anchor>
             </Link>
           </Menu.Item>
-          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264' }}>
+          <Menu.Item style={{ textAlign: 'center', backgroundColor: '#618264', marginTop: '2px' }}>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSecDyjgoSypRT2rmSYG3kZxOASKzAdZAAjuu67wcQHbSFp-wA/viewform" passHref legacyBehavior>
               <Anchor style={{ color: 'white', fontWeight: 'bold' }}>Surat kematian</Anchor>
             </Link>
