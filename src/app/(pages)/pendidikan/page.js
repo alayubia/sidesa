@@ -12,7 +12,7 @@ export default function FamiliesPage() {
     const [families, setFamilies] = useState([]);
 
     const fetchFamilies = async () => {
-        const res = await fetch('/api/families');
+        const res = await fetch('/api/pendidikan');
         const data = await res.json();
         setFamilies(data);
         setLoading(false);

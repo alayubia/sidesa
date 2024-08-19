@@ -12,10 +12,12 @@ export default function FamiliesPage() {
     const [families, setFamilies] = useState([]);
 
     const fetchFamilies = async () => {
-        const res = await fetch('/api/families');
+        const res = await fetch('/api/mata_pencaharian_pokok');
         const data = await res.json();
         setFamilies(data);
         setLoading(false);
+        console.log(data);
+        
     };
 
     useEffect(() => {
